@@ -21,3 +21,12 @@ Note : Function parameters can only be val(not to be mentioned explicitly). Prev
 Lazy is a good fit for properties that may or may not be accessed. If we never access them, we avoid computing their initial value. They may work for Activities, as long as they are not accessed before setContentView is called. They are not a great fit for referencing views in a Fragment, because the common pattern of configuring views inside onCreateView would cause a crash. They can be used if view configuration is done in onViewCreated.
 
 With Activities or Fragments, it makes more sense to use lateinit for their properties, especially the ones referencing views. While we don’t control the lifecycle, we know when those properties will be properly initialized. The downside is we have to ensure they are initialized in the appropriate lifecycle methods.
+
+
+###Useful Kotlin Libraries
+
+1. **Anko** : [https://github.com/Kotlin/anko] It is a library which makes android development easier in Kotlin. It has several parts :
+     * Anko Commons: a lightweight library full of helpers for intents, dialogs, logging and so on;
+     * Anko Layouts: a fast and type-safe way to write dynamic Android layouts;
+     * Anko SQLite: a query DSL and parser collection for Android SQLite;
+     * Anko Coroutines: utilities based on the kotlinx.coroutines library.
