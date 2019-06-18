@@ -62,3 +62,12 @@ class Car(val horsepowers: Int) {
      * Anko Layouts: a fast and type-safe way to write dynamic Android layouts;
      * Anko SQLite: a query DSL and parser collection for Android SQLite;
      * Anko Coroutines: utilities based on the kotlinx.coroutines library.
+2. **Fuel** : [https://github.com/kittinunf/fuel] Its github page describes it to be the "The easiest HTTP networking library for Kotlin/Android". It's features includes:
+     * HTTP GET/POST/PUT/DELETE/HEAD/PATCH requests in a fluent style interface;
+     * Asynchronous and blocking requests;
+     * Downloading as a file;
+     * Uploading files, blobs as multipart/data;
+     * Cancelling asynchronous requests;
+     * Request as coroutines
+     * Deserialization into POJO/POKO
+     * API routing
