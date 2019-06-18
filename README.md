@@ -23,7 +23,39 @@ Lazy is a good fit for properties that may or may not be accessed. If we never a
 With Activities or Fragments, it makes more sense to use lateinit for their properties, especially the ones referencing views. While we don’t control the lifecycle, we know when those properties will be properly initialized. The downside is we have to ensure they are initialized in the appropriate lifecycle methods.
 
 
-###Useful Kotlin Libraries
+### Objects and Companion Objects
+
+Objects are used to define singletons in Kotlin i.e a class that has only one instance. We use the **object** keyword to declare the singleton instead of the **class** keyword.
+
+```kotlin
+object CarFactory {
+    val cars = mutableListOf<Car>()
+    
+    fun makeCar(horsepowers: Int): Car {
+        val car = Car(horsepowers)
+        cars.add(car)
+        return car
+    }
+}
+```
+
+Companion Objects are useful when we want some static methods or data members. Declaring such methods and variables in a companion object allows us to use those as static ones from directly the class without instantiating any object for it.
+
+```kotlin
+class Car(val horsepowers: Int) {
+    companion object Factory {
+        val cars = mutableListOf<Car>()
+
+        fun makeCar(horsepowers: Int): Car {
+            val car = Car(horsepowers)
+            cars.add(car)
+            return car
+        }
+    }
+}
+```
+
+### Useful Kotlin Libraries
 
 1. **Anko** : [https://github.com/Kotlin/anko] It is a library which makes android development easier in Kotlin. It has several parts :
      * Anko Commons: a lightweight library full of helpers for intents, dialogs, logging and so on;
