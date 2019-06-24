@@ -71,3 +71,15 @@ class Car(val horsepowers: Int) {
      * Request as coroutines
      * Deserialization into POJO/POKO
      * API routing
+3. **khttp** : [https://github.com/jkcclemens/khttp] It is http without the bullshit. It mimics python's requests module to send http requests. It's features includes:
+     * Sessions with cookie persistence
+     * Basic authentication
+     * Elegant key/value cookies
+     * Automatic decompression
+     * Unicode response bodies
+     * Connection timeouts
+4. **klaxon** : [https://github.com/cbeust/klaxon] With this one, you can parse json in kotlin with ease. It has different APIs for parsing :
+     * **An object binding API** to bind JSON documents directly to your objects, and vice versa.
+     * **A streaming API** to process your JSON documents as they're being read.
+     * **A low level API** to manipulate JSON objects and use queries on them.
+     * **A JSON path query API** to extract specific parts of your JSON document while streaming.
