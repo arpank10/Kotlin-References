@@ -93,3 +93,6 @@ class Car(val horsepowers: Int) {
 	* OneWayToSource: Binding from view to model
 	* OneTime: Binding from model to view, and auto release after first emit	
 It supports both simple and multiple binding.
+9. [RxDownload](https://github.com/ssseasonnn/RxDownload) It is a multi-threaded download tool written with RxJava and Kotlin. This can handle all your download needs.
+10. [RxKotlin](https://github.com/ReactiveX/RxKotlin) This is the extension of RxJava in kotlin. It leverages language features of Kotlin (like extension functions) that streamlines the usage of RxJava even more.
+11. [Kluent](https://github.com/MarkusAmshove/Kluent) Kluent is a "Fluent Assertions" library written specifically for Kotlin. It uses the Infix-Notations and Extension Functions of Kotlin to provide a fluent wrapper around the JUnit-Asserts and Mockito.
