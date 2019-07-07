@@ -1,3 +1,4 @@
+
 # Kotlin-References
 All the questions and answers to kotlin
 
@@ -57,12 +58,12 @@ class Car(val horsepowers: Int) {
 
 ### Useful Kotlin Libraries
 
-1. **Anko** : [https://github.com/Kotlin/anko] It is a library which makes android development easier in Kotlin. It has several parts :
+1. [Anko](https://github.com/Kotlin/anko) It is a library which makes android development easier in Kotlin. It has several parts :
      * Anko Commons: a lightweight library full of helpers for intents, dialogs, logging and so on;
      * Anko Layouts: a fast and type-safe way to write dynamic Android layouts;
      * Anko SQLite: a query DSL and parser collection for Android SQLite;
      * Anko Coroutines: utilities based on the kotlinx.coroutines library.
-2. **Fuel** : [https://github.com/kittinunf/fuel] Its github page describes it to be the "The easiest HTTP networking library for Kotlin/Android". It's features includes:
+2. [Fuel](https://github.com/kittinunf/fuel) Its github page describes it to be the "The easiest HTTP networking library for Kotlin/Android". It's features includes:
      * HTTP GET/POST/PUT/DELETE/HEAD/PATCH requests in a fluent style interface;
      * Asynchronous and blocking requests;
      * Downloading as a file;
@@ -71,15 +72,24 @@ class Car(val horsepowers: Int) {
      * Request as coroutines
      * Deserialization into POJO/POKO
      * API routing
-3. **khttp** : [https://github.com/jkcclemens/khttp] It is http without the bullshit. It mimics python's requests module to send http requests. It's features includes:
+3. [khttp](https://github.com/jkcclemens/khttp) It is http without the bullshit. It mimics python's requests module to send http requests. It's features includes:
      * Sessions with cookie persistence
      * Basic authentication
      * Elegant key/value cookies
      * Automatic decompression
      * Unicode response bodies
      * Connection timeouts
-4. **klaxon** : [https://github.com/cbeust/klaxon] With this one, you can parse json in kotlin with ease. It has different APIs for parsing :
+4. [klaxon](https://github.com/cbeust/klaxon) With this one, you can parse json in kotlin with ease. It has different APIs for parsing :
      * **An object binding API** to bind JSON documents directly to your objects, and vice versa.
      * **A streaming API** to process your JSON documents as they're being read.
      * **A low level API** to manipulate JSON objects and use queries on them.
      * **A JSON path query API** to extract specific parts of your JSON document while streaming.
+5. [KotterKnife](https://github.com/JakeWharton/kotterknife) You must have used butterknife, the view injection library for android in Java. This library is from the same author, Jake Wharton. It is butterknife's counterpart in Kotlin. It is used for **view binding**.
+6. [KotlinPreferences](https://github.com/MarcinMoskala/KotlinPreferences) This is one of the two libraries of Marcin Moskala, which makes preference usage simple and fun.
+7. [PreferenceHolder](https://github.com/MarcinMoskala/PreferenceHolder)  This is described as the brother of the KotlinPreferences library, also made by Marcin Moskala. Apart from helping with preferences, it also has a test mode and gson serialization.
+8. [kbinding](https://github.com/BennyWang/KBinding) This is a android MVVM framework written in Kotlin. It has four binding modes :
+	* OneWay: Binding from model to view
+	* TwoWay: Binding from model to view and view to model
+	* OneWayToSource: Binding from view to model
+	* OneTime: Binding from model to view, and auto release after first emit	
+It supports both simple and multiple binding.
