@@ -1,7 +1,27 @@
 
 # Kotlin-References
-All the questions and answers to kotlin
 
+### Language Specific Features
+ * No new keyword for instantiaing objects : `val x = Person("Arpan")`
+ * **Pair** can be used to assign two variables at a time :
+	 ```kotlin
+	val(d: String, c: Person) = {
+		if(x<10) Pair("Arpan", Person("x"))
+		else Pair("ARPAN", Person("y"))
+	}
+	```
+ * We can omit the type of a variable if it can be inferred from the context. But kotlin is a **statically typed language**, every expression has a type.
+ * We can use when instead of if :
+	 ```kotlin
+	val(d: String, c: Person) = when {
+		x<10 -> Pair("Arpan", Person("x"))
+		else -> Pair("ARPAN", Person("y"))
+	}
+	``` 
+ * Functions can be defined at the top level, i.e at the package level.
+ *  **main** function can be written with without any arguments unlike java.
+ *  **if** can be used as an expression and it's result can be assigned to a variable.
+	 
 ### Difference between var and val
 
 1. var : var is like general variable and it's known as a mutable variable in kotlin and can be assigned multiple times.
